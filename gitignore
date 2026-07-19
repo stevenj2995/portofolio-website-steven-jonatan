@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Environment — NEVER commit these
+.env
+.env.*
+*.pem
+*.key
+
+# Build output
+.vercel/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pkl
+venv/
+.venv/
+
+# Large project source files (keep these in separate repos)
+Projects/
+*.zip
+*.pkt

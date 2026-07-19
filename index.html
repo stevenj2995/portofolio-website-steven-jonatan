@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Steven Jonatan Portfolio Website</title>
+
+<!-- SEO -->
+<meta name="description" content="Steven Jonatan — Computer Science student at BINUS University Jakarta, focused on AI and Data Science. Portfolio of machine learning, NLP, computer vision, and full-stack projects." />
+<meta name="author" content="Steven Jonatan" />
+<meta name="keywords" content="Steven Jonatan, Computer Science, BINUS University, Machine Learning, Data Science, AI, Portfolio, Jakarta, Internship" />
+<link rel="canonical" href="https://stevenjonatan.vercel.app/" />
+<meta name="theme-color" content="#0a0a0f" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://stevenjonatan.vercel.app/" />
+<meta property="og:title" content="Steven Jonatan — CS Student & AI / Data Science Enthusiast" />
+<meta property="og:description" content="Computer Science student at BINUS University Jakarta, focused on AI and Data Science. Portfolio of machine learning, NLP, computer vision, and full-stack projects." />
+<meta property="og:image" content="https://stevenjonatan.vercel.app/assets/profile.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="id_ID" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Steven Jonatan — CS Student & AI / Data Science Enthusiast" />
+<meta name="twitter:description" content="Computer Science student at BINUS University Jakarta, focused on AI and Data Science." />
+<meta name="twitter:image" content="https://stevenjonatan.vercel.app/assets/profile.jpg" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="apple-touch-icon" href="assets/profile.jpg" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Steven Jonatan",
+  "url": "https://stevenjonatan.vercel.app/",
+  "email": "stevenj2995@gmail.com",
+  "jobTitle": "Computer Science Student",
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "BINUS University" },
+    { "@type": "CollegeOrUniversity", "name": "Mahidol University International College" }
+  ],
+  "knowsAbout": ["Machine Learning", "Data Science", "Natural Language Processing", "Computer Vision", "Python", "Web Development"],
+  "sameAs": [
+    "https://github.com/stevenj2995",
+    "https://www.linkedin.com/in/stevenjonatan/"
+  ]
+}
+</script>
+</head>
+<body>
+
+<a href="#hero" class="skip-link" data-i18n="skip_link">Skip to content</a>
+
+<!-- Animated Background -->
+<div class="background-parallax">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">SJ.</a>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about" data-i18n="nav_about">About</a></li>
+    <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+    <li><a href="#coursework" data-i18n="nav_coursework">Coursework</a></li>
+    <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn lang-btn-active" id="langBtnEN" onclick="setLang('en')" title="English" aria-label="Switch to English">
+        <svg width="20" height="14" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" style="border-radius:2px;flex-shrink:0" aria-hidden="true">
+          <rect width="60" height="40" fill="#012169"/>
+          <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" stroke-width="8"/>
+          <path d="M0,0 L60,40 M60,0 L0,40" stroke="#C8102E" stroke-width="5"/>
+          <path d="M30,0 V40 M0,20 H60" stroke="#fff" stroke-width="13"/>
+          <path d="M30,0 V40 M0,20 H60" stroke="#C8102E" stroke-width="8"/>
+        </svg>
+        <span>EN</span>
+      </button>
+      <button class="lang-btn" id="langBtnID" onclick="setLang('id')" title="Bahasa Indonesia" aria-label="Ganti ke Bahasa Indonesia">
+        <svg width="20" height="14" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" style="border-radius:2px;flex-shrink:0" aria-hidden="true">
+          <rect width="60" height="20" fill="#CE1126"/>
+          <rect y="20" width="60" height="20" fill="#fff"/>
+        </svg>
+        <span>ID</span>
+      </button>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-text">
+    <div class="hero-badge" data-i18n="hero_badge">✦ CS Student · Turning data into decisions</div>
+
+    <h1 class="hero-name">
+      STEVEN<br/>
+      <span class="gradient-text">JONATAN</span>
+    </h1>
+
+    <p class="hero-tagline">
+      <span data-i18n="hero_tagline">CS Student &amp; </span><span class="highlight" data-i18n="hero_tagline_highlight">AI / Data Science Enthusiast</span>
+    </p>
+    <p class="hero-uni" data-i18n="hero_uni">BINUS University — Computer Science (Global Class) · Former Visiting Student @ Mahidol University, Thailand</p>
+
+    <p class="hero-desc" data-i18n="hero_desc">Dedicated computer science student with a passion for technology, problem-solving, and building intelligent systems. Where curiosity meets code — and music meets machine learning.</p>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary" data-i18n="hero_cta1">View My Work</a>
+      <a href="#contact" class="btn-outline" data-i18n="hero_cta2">Get in Touch</a>
+    </div>
+
+    <div class="hero-socials">
+      <a href="https://github.com/stevenj2995" class="social-link github" target="_blank" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.29 9.4 7.86 10.93.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.69-3.88-1.54-3.88-1.54-.53-1.35-1.29-1.71-1.29-1.71-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.72-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.3 1.2-3.11-.12-.3-.52-1.52.11-3.17 0 0 .98-.31 3.2 1.19a11.1 11.1 0 0 1 5.83 0c2.22-1.5 3.2-1.19 3.2-1.19.63 1.65.23 2.87.11 3.17.75.81 1.2 1.85 1.2 3.11 0 4.43-2.69 5.4-5.25 5.69.41.35.78 1.05.78 2.12 0 1.53-.01 2.76-.01 3.14 0 .31.21.67.8.56A11.52 11.52 0 0 0 23.5 12C23.5 5.66 18.35.5 12 .5z"/>
+          </svg>
+      </a>
+
+      <a href="https://linkedin.com/in/stevenjonatan" class="social-link linkedin" target="_blank" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M4.98 3.5A2.48 2.48 0 1 0 5 8.46 2.48 2.48 0 0 0 4.98 3.5zM3 9h4v12H3zm7 0h3.83v1.64h.05c.53-1 1.84-2.06 3.79-2.06 4.05 0 4.8 2.67 4.8 6.13V21h-4v-5.56c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95V21h-4z"/>
+          </svg>
+      </a>
+
+      <a href="mailto:stevenj2995@gmail.com" class="social-link email" aria-label="Email">
+          <svg viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+
+            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+            <path d="M3 7l9 6 9-6"></path>
+          </svg>
+      </a>
+
+      <a href="https://wa.me/6281211938007" class="social-link whatsapp" target="_blank" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.54 0 .24 5.3.24 11.82c0 2.08.54 4.11 1.57 5.9L0 24l6.46-1.7a11.8 11.8 0 0 0 5.6 1.42h.01c6.52 0 11.82-5.3 11.82-11.82 0-3.16-1.23-6.13-3.37-8.42zM12.07 21.3h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.83 1 1.02-3.73-.22-.38a9.42 9.42 0 0 1-1.44-5.04c0-5.19 4.22-9.41 9.42-9.41 2.51 0 4.87.98 6.65 2.76a9.35 9.35 0 0 1 2.76 6.65c0 5.19-4.22 9.42-9.41 9.42zm5.16-7.06c-.28-.14-1.66-.82-1.92-.91-.26-.1-.45-.14-.64.14-.19.28-.73.91-.9 1.1-.16.19-.33.21-.61.07-.28-.14-1.17-.43-2.23-1.36-.82-.73-1.38-1.63-1.54-1.91-.16-.28-.02-.43.12-.57.12-.12.28-.33.42-.5.14-.16.19-.28.28-.47.09-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.47-.64-.48h-.55c-.19 0-.5.07-.76.36-.26.28-1 1-1 2.43 0 1.42 1.02 2.8 1.16 2.99.14.19 2.01 3.08 4.87 4.32.68.29 1.21.47 1.63.6.68.22 1.3.19 1.79.12.55-.08 1.66-.68 1.9-1.34.23-.66.23-1.22.16-1.34-.07-.12-.26-.19-.54-.33z"/>
+          </svg>
+      </a>
+
+      <a href="https://docs.google.com/document/d/1JuCuE9mOgdDMHSymmS4-uGTTZ9qFSooK/preview"
+        class="social-link cv"
+        target="_blank"
+        aria-label="View CV">
+
+        <span class="cv-text">CV</span>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-avatar">
+    <div class="avatar-ring">
+      <div class="avatar-inner">
+        <img src="Picture Assets/Profile Picture.JPG" alt="Portrait of Steven Jonatan" width="600" height="800" fetchpriority="high" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">
+    <div class="section-label-line"></div>
+    <span class="section-label-text" data-i18n="sec_about_label">01 / About</span>
+  </div>
+  <h2 class="section-title" data-i18n="sec_about_title">Who I am</h2>
+
+  <div class="about-grid">
+    <div class="about-text">
+      <p data-i18n="about_p1">I'm Steven Jonatan, an undergraduate Computer Science student at BINUS University with a focus on Artificial Intelligence and Data Science. My academic journey took me beyond borders — I spent time as a visiting student at Mahidol University of International College in Thailand, which broadened both my technical perspective and my understanding of global tech communities.</p>
+      <p data-i18n="about_p2">I'm deeply passionate about the intersection of data and intelligence — building systems that learn, adapt, and solve real-world problems. Whether it's training models, crafting clean code, or diving into a new framework, I thrive in environments that push me to keep growing.</p>
+      <p data-i18n="about_p3">Outside the terminal, I'm a music lover. I believe creativity fuels great engineering — the same attention to structure and flow that makes a good song also makes good software.</p>
+    </div>
+
+    <div class="about-stats">
+      <div class="stat-card">
+        <div class="stat-number">2027</div>
+        <div class="stat-label" data-i18n="stat_grad">Expected Graduation</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number stat-number-pink">∞</div>
+        <div class="stat-label">Curiosity to Learn</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number stat-number-pink">6</div>
+        <div class="stat-label" data-i18n="stat_sem">Semesters Completed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number stat-number-teal">3.65</div>
+        <div class="stat-label" data-i18n="stat_gpa">GPA (out of 4.00)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label">
+    <div class="section-label-line"></div>
+    <span class="section-label-text" data-i18n="sec_skills_label">02 / Skills &amp; Profile</span>
+  </div>
+  <h2 class="section-title" data-i18n="sec_skills_title">What I work with</h2>
+
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="ticker"></div>
+  </div>
+
+  <div class="profile-tabs">
+    <div class="tab-btns" role="tablist">
+      <button class="tab-btn tab-active" onclick="switchTab('education', this)" role="tab" aria-selected="true" aria-controls="tab-education" data-i18n="tab_edu">Education</button>
+      <button class="tab-btn" onclick="switchTab('experience', this)" role="tab" aria-selected="false" aria-controls="tab-experience" data-i18n="tab_exp">Experience</button>
+      <button class="tab-btn" onclick="switchTab('certifications', this)" role="tab" aria-selected="false" aria-controls="tab-certifications" data-i18n="tab_cert">Certifications &amp; Achievements</button>
+    </div>
+
+    <div class="profile-body">
+
+      <!-- LEFT: Skills -->
+      <div class="skill-bars-col">
+        <div class="skill-bars-title" data-i18n="skills_tech_title">Technical Skills</div>
+
+        <div class="skill-group">
+          <div class="skill-group-label" data-i18n="skg_ai">AI &amp; Data Science</div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-pink">Machine Learning</span>
+            <span class="skill-tag skill-tag-pink">Deep Learning</span>
+            <span class="skill-tag skill-tag-pink">Natural Language Processing</span>
+            <span class="skill-tag skill-tag-pink">Computer Vision</span>
+            <span class="skill-tag skill-tag-pink">Data Mining</span>
+            <span class="skill-tag skill-tag-pink">Scikit-learn</span>
+            <span class="skill-tag skill-tag-pink">Transformers</span>
+            <span class="skill-tag skill-tag-pink">Pandas / NumPy</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label" data-i18n="skg_lang">Programming Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-purple">Python</span>
+            <span class="skill-tag skill-tag-purple">SQL</span>
+            <span class="skill-tag skill-tag-purple">JavaScript</span>
+            <span class="skill-tag skill-tag-purple">PHP</span>
+            <span class="skill-tag skill-tag-purple">Java</span>
+            <span class="skill-tag skill-tag-purple">Dart</span>
+            <span class="skill-tag skill-tag-purple">C / C++</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label" data-i18n="skg_web">Web &amp; Mobile</div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-amber">HTML / CSS</span>
+            <span class="skill-tag skill-tag-amber">Laravel</span>
+            <span class="skill-tag skill-tag-amber">Flask</span>
+            <span class="skill-tag skill-tag-amber">Streamlit</span>
+            <span class="skill-tag skill-tag-amber">Flutter</span>
+            <span class="skill-tag skill-tag-amber">Bootstrap</span>
+            <span class="skill-tag skill-tag-amber">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label" data-i18n="skg_tools">Tools &amp; Infrastructure</div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag-teal">Git / GitHub</span>
+            <span class="skill-tag skill-tag-teal">MySQL</span>
+            <span class="skill-tag skill-tag-teal">SQLite</span>
+            <span class="skill-tag skill-tag-teal">Alibaba Cloud</span>
+            <span class="skill-tag skill-tag-teal">Render</span>
+            <span class="skill-tag skill-tag-teal">Cisco Packet Tracer</span>
+            <span class="skill-tag skill-tag-teal">Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-bars-title mt-lg" data-i18n="skills_lang_title">Languages</div>
+        <div class="spoken-langs">
+          <span class="spoken-lang"><span class="spoken-lang-flag">🇬🇧</span> <span data-i18n="lang_en">English</span> <span class="spoken-lang-level" data-i18n="lang_en_lvl">Upper Intermediate</span></span>
+          <span class="spoken-lang"><span class="spoken-lang-flag">🇮🇩</span> <span data-i18n="lang_id">Indonesian</span> <span class="spoken-lang-level" data-i18n="lang_id_lvl">Native</span></span>
+        </div>
+
+        <div class="skill-bars-title mt-lg" data-i18n="skills_soft_title">Soft Skills</div>
+        <div class="soft-skills-grid">
+          <span class="soft-skill-tag" data-i18n="soft_1">🤝 Coordination</span>
+          <span class="soft-skill-tag" data-i18n="soft_2">🧩 Problem-Solving</span>
+          <span class="soft-skill-tag" data-i18n="soft_3">🔄 Adaptation</span>
+          <span class="soft-skill-tag" data-i18n="soft_4">⏱️ Time-Management</span>
+          <span class="soft-skill-tag" data-i18n="soft_5">🔍 Attention to Detail</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: Timeline -->
+      <div class="timeline-col">
+
+        <!-- EDUCATION TAB -->
+        <div id="tab-education" class="tab-content tab-content-active" role="tabpanel">
+          <div class="timeline">
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-purple"></div>
+              <div class="tl-date">Sep 2023 – Sep 2027</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-purple" data-i18n="edu1_badge">🎓 Degree</div>
+                <div class="tl-title" data-i18n="edu1_title">Bachelor of Computer Science (Global Class)</div>
+                <div class="tl-org">BINUS University · West Jakarta, Indonesia</div>
+                <div class="tl-desc">GPA 3.65/4.00. Alumni of HIMTI BINUS 2024-2026 and UKM Band BINUS 2024-2026.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="edu1_t1">AI &amp; Data Science</span>
+                  <span class="tl-tag">HIMTI BINUS</span>
+                  <span class="tl-tag">UKM Band</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-teal"></div>
+              <div class="tl-date">Jan 2026 – Apr 2026</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-teal" data-i18n="edu2_badge">🌏 Study Abroad</div>
+                <div class="tl-title" data-i18n="edu2_title">Visiting Student · Computer Science</div>
+                <div class="tl-org">Mahidol University of International College · Thailand</div>
+                <div class="tl-desc" data-i18n="edu2_desc">Semester abroad studying advanced CS subjects in an international academic environment. Coursework included Programming Paradigms, Minds &amp; Machines, NLP &amp; Speech Processing, and Statistics for Research.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="edu2_t1">International</span>
+                  <span class="tl-tag">NLP</span>
+                  <span class="tl-tag" data-i18n="edu2_t3">Research</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-amber"></div>
+              <div class="tl-date">Jul 2020 – May 2023</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-amber" data-i18n="edu3_badge">🏫 High School</div>
+                <div class="tl-title" data-i18n="edu3_title">Science Major</div>
+                <div class="tl-org">Sekolah Kristen Kalam Kudus Indonesia</div>
+                <div class="tl-desc" data-i18n="edu3_desc">Completed high school under the science stream, building a strong foundation in mathematics, physics, and computer science fundamentals.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="edu3_t1">Science Stream</span>
+                  <span class="tl-tag" data-i18n="edu3_t2">Mathematics</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EXPERIENCE TAB -->
+        <div id="tab-experience" class="tab-content" role="tabpanel">
+          <div class="timeline">
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-lblue"></div>
+              <div class="tl-date">Feb 2024 – Present</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-lblue">🎓 HIMTI BINUS University</div>
+                <div class="tl-title" data-i18n="exp1_title">Multiple Roles — HIMTI BINUS University</div>
+                <div class="tl-org">HIMTI BINUS University · Jakarta, Indonesia</div>
+                <div class="tl-desc" data-i18n="exp1_desc">Active member of HIMTI (the CS student organisation at BINUS University) across multiple divisions and events over two consecutive periods:</div>
+                <ul class="tl-list">
+                  <li data-i18n="exp1_li1"><strong>Vice Manager of HIMTI Band</strong> (2025/2026) — leading rehearsals, performances, and creative direction.</li>
+                  <li data-i18n="exp1_li2"><strong>Activist of HIMTI Care</strong> (2024/2025 &amp; 2025/2026) — social welfare and community engagement programmes.</li>
+                  <li data-i18n="exp1_li3"><strong>Vice Chairman of HIMTI Farewell 2025</strong> — co-led event planning for HIMTI's flagship farewell event.</li>
+                  <li data-i18n="exp1_li4"><strong>Mentor of SESVENT 2024</strong> — guided new CS students through orientation and early university life.</li>
+                </ul>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_leadership">Leadership</span>
+                  <span class="tl-tag" data-i18n="tag_eventmgmt">Event Management</span>
+                  <span class="tl-tag" data-i18n="tag_mentoring">Mentoring</span>
+                  <span class="tl-tag" data-i18n="tag_community">Community</span>
+                  <span class="tl-tag" data-i18n="tag_teamwork">Teamwork</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-red"></div>
+              <div class="tl-date">Feb 2024 – Feb 2026</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-red">🎵 UKM Band BINUS</div>
+                <div class="tl-title" data-i18n="exp2_title">Activist of Publication &amp; Documentation</div>
+                <div class="tl-org">UKM Band BINUS University · Jakarta, Indonesia · On-site</div>
+                <div class="tl-desc" data-i18n="exp2_desc">Handled publication and documentation duties for UKM Band BINUS for two consecutive periods (2024/2025 &amp; 2025/2026). Covered inauguration performances and collaborated with artists including Maysha Jhuan.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_documentation">Documentation</span>
+                  <span class="tl-tag" data-i18n="tag_publication">Publication</span>
+                  <span class="tl-tag" data-i18n="tag_strategy">Strategy</span>
+                  <span class="tl-tag" data-i18n="tag_communication">Communication</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-orange"></div>
+              <div class="tl-date">Nov 2024 – Dec 2024</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-orange">💻 ICPC 2024</div>
+                <div class="tl-title" data-i18n="exp3_title">Escort Division Staff</div>
+                <div class="tl-org">ICPC — International Collegiate Programming Contest</div>
+                <div class="tl-desc" data-i18n="exp3_desc">Part of the escort division committee for ICPC 2024, one of the world's most prestigious collegiate programming competitions. Supported participant coordination and logistics during the event.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag">ICPC</span>
+                  <span class="tl-tag" data-i18n="tag_compprog">Competitive Programming</span>
+                  <span class="tl-tag" data-i18n="tag_eventcoord">Event Coordination</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-teal"></div>
+              <div class="tl-date">Jun 2023 – Aug 2023</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-teal" data-i18n="exp4_badge">💼 Work Experience</div>
+                <div class="tl-title" data-i18n="exp4_title">Event Organizer</div>
+                <div class="tl-org">Abe Studio · Jakarta, Indonesia</div>
+                <div class="tl-desc" data-i18n="exp4_desc">Worked with the organizing committee to design event flow, managed logistics including audiovisual setup and essential resources, and compiled event reports through documentation and recordings.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_collab">Collaboration &amp; Teamwork</span>
+                  <span class="tl-tag" data-i18n="tag_eventplan">Event Planning</span>
+                  <span class="tl-tag" data-i18n="tag_coordination">Coordination</span>
+                  <span class="tl-tag" data-i18n="tag_documentation2">Documentation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-dkblue"></div>
+              <div class="tl-date">Oct 2021 – Oct 2022</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-dkblue">🏫 SKKK Indonesia</div>
+                <div class="tl-title" data-i18n="exp5_title">Chairman of Spiritual Division — OSIS SMAS 2 Kristen Kalam Kudus Jakarta</div>
+                <div class="tl-org">Sekolah Kristen Kalam Kudus Indonesia · Jakarta</div>
+                <div class="tl-desc" data-i18n="exp5_desc">Led the Spiritual Division of the student council (OSIS) at SMAS 2 Kristen Kalam Kudus Jakarta, organising major school spiritual events including Christmas Day, Easter Day, and MPLS 2021 orientation.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_leadership2">Leadership</span>
+                  <span class="tl-tag" data-i18n="tag_eventorg">Event Organisation</span>
+                  <span class="tl-tag" data-i18n="tag_spiritual">Spiritual</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-dkblue"></div>
+              <div class="tl-date">Apr 2022 – Oct 2022</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-dkblue">🏫 SKKK Indonesia</div>
+                <div class="tl-title" data-i18n="exp6_title">Coordinator — Band Competition HIRAETH 2022</div>
+                <div class="tl-org">Sekolah Kristen Kalam Kudus Indonesia · Jakarta</div>
+                <div class="tl-desc" data-i18n="exp6_desc">Coordinated the Band Competition segment of HIRAETH 2022 over 7 months, managing participant registration, stage logistics, judging panels, and event flow. Received a HIRAETH Committee Certificate of Appreciation.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_eventcoord2">Event Coordination</span>
+                  <span class="tl-tag" data-i18n="tag_music">Music</span>
+                  <span class="tl-tag" data-i18n="tag_management">Management</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-dkblue"></div>
+              <div class="tl-date">Oct 2018 – Oct 2019</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-dkblue">🏫 SKKK Indonesia</div>
+                <div class="tl-title" data-i18n="exp7_title">Staff of Spiritual Division — OSIS SMPK Kalam Kudus Kosambi Baru</div>
+                <div class="tl-org">Sekolah Kristen Kalam Kudus Indonesia · Jakarta</div>
+                <div class="tl-desc" data-i18n="exp7_desc">Active member of the Spiritual Division in the junior high school student council, contributing to school worship and praise activities including the Praise and Worship Band.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_worship">Worship</span>
+                  <span class="tl-tag" data-i18n="tag_music2">Music</span>
+                  <span class="tl-tag" data-i18n="tag_council">Student Council</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-dkblue"></div>
+              <div class="tl-date">Jul 2019 · 1 month</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-dkblue">🏫 SKKK Indonesia</div>
+                <div class="tl-title" data-i18n="exp8_title">Mentor of MPLS 2019</div>
+                <div class="tl-org">SMP Kristen Kalam Kudus Kosambi Baru · Jakarta</div>
+                <div class="tl-desc" data-i18n="exp8_desc">Served as a mentor during MPLS 2019 (new student orientation), guiding incoming junior high school students through their transition into school life.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_mentoring2">Mentoring</span>
+                  <span class="tl-tag" data-i18n="tag_orientation">Orientation</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CERTIFICATIONS TAB -->
+        <div id="tab-certifications" class="tab-content" role="tabpanel">
+          <div class="timeline">
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-alibaba"></div>
+              <div class="tl-date" data-i18n="cert1_date">May 2025 · Valid until May 2027</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-alibaba" data-i18n="cert_badge_pro">☁️ Professional Certification</div>
+                <div class="tl-title">Alibaba Cloud Certified Associate: Cloud Engineer</div>
+                <div class="tl-org">Alibaba Cloud</div>
+                <div class="tl-desc" data-i18n="cert1_desc">Successfully completed the Alibaba Cloud Certification requirements and officially obtained the Cloud Engineer Associate certificate. Credential ID: IACA13250500210513L</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_cloud">Cloud Computing</span>
+                  <span class="tl-tag" data-i18n="tag_cloudsec">Cloud Security</span>
+                  <span class="tl-tag">Alibaba Cloud</span>
+                </div>
+                <div class="cert-preview-wrap">
+                  <img src="assets/cert-alibaba.jpg" alt="Alibaba Cloud Certified Associate certificate" class="cert-preview" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-nvidia"></div>
+              <div class="tl-date">Mar 2025</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-nvidia" data-i18n="cert_badge_pro2">🤖 Professional Certification</div>
+                <div class="tl-title">Fundamentals of Deep Learning</div>
+                <div class="tl-org">NVIDIA</div>
+                <div class="tl-desc" data-i18n="cert2_desc">Completed NVIDIA's Fundamentals of Deep Learning course, covering neural network architectures, training techniques, and practical deep learning applications using Python. Credential ID: 1tO0Ys3ITkGJkXM3sgBKrQ</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_dl">Deep Learning</span>
+                  <span class="tl-tag">Python</span>
+                  <span class="tl-tag" data-i18n="tag_nn">Neural Networks</span>
+                </div>
+                <a href="https://learn.nvidia.com/certificates?id=LIKOfU4tQN2I2rj-Jhl1qw" target="_blank" rel="noopener noreferrer" class="cert-link" data-i18n="cert_view">View Credential ↗</a>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-lblue"></div>
+              <div class="tl-date">Jan 2025 – Feb 2025</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-lblue">🎓 HIMTI BINUS</div>
+                <div class="tl-title" data-i18n="cert3_title">Staff of Disciplinary Division — HILET 2025</div>
+                <div class="tl-org">HIMTI BINUS University · Pioneers of Leadership</div>
+                <div class="tl-desc" data-i18n="cert3_desc">E-Certificate awarded for active service as Staff of Disciplinary Division during HILET 2025 (HIMTI Leadership Training), held by HIMTI BINUS University on February 16–23, 2025.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_leadership3">Leadership</span>
+                  <span class="tl-tag" data-i18n="tag_discipline">Discipline</span>
+                </div>
+                <div class="cert-preview-wrap">
+                  <img src="assets/cert-hilet.jpg" alt="HILET 2025 certificate" class="cert-preview" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-lblue"></div>
+              <div class="tl-date">Sep 2024 – Oct 2024</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-lblue">🎓 HIMTI BINUS</div>
+                <div class="tl-title" data-i18n="cert4_title">Volunteer of Mentor Division — SESVENT 2024</div>
+                <div class="tl-org">HIMTI BINUS University · Campus Monopoly Adventure</div>
+                <div class="tl-desc" data-i18n="cert4_desc">Certificate awarded for participation as Volunteer of Mentor Division during HIMTI SESVENT JKT-BDG 2024 "Campus Monopoly Adventure: Building Strong Activists Network", held on October 13–20, 2024.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_mentoring3">Mentoring</span>
+                  <span class="tl-tag" data-i18n="tag_engagement">Student Engagement</span>
+                </div>
+                <div class="cert-preview-wrap">
+                  <img src="assets/cert-sesvent.jpg" alt="SESVENT 2024 certificate" class="cert-preview" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-lblue"></div>
+              <div class="tl-date">Jun 2024 – Dec 2024</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-lblue">🎓 HIMTI BINUS</div>
+                <div class="tl-title" data-i18n="cert5_title">Staff of PTK Division — HISHOT 2024</div>
+                <div class="tl-org">HIMTI BINUS University · Preventing Risks, Overcoming Threats, Empowering Cybersecurity Talents</div>
+                <div class="tl-desc" data-i18n="cert5_desc">Certificate of outstanding services and dedication as Staff of PTK (Equipment, Transportation &amp; Consumption) Division during HISHOT 2024, held June 22–December 7, 2024.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_logistics">Logistics</span>
+                  <span class="tl-tag" data-i18n="tag_operations">Operations</span>
+                  <span class="tl-tag" data-i18n="tag_cyberevent">Cybersecurity Event</span>
+                </div>
+                <div class="cert-preview-wrap">
+                  <img src="assets/cert-hishot-staff.jpg" alt="HISHOT 2024 staff certificate" class="cert-preview" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-lblue"></div>
+              <div class="tl-date">Jun 2024</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-lblue">🎓 HIMTI BINUS</div>
+                <div class="tl-title" data-i18n="cert6_title">Committee — HISHOT 2024 Seminar</div>
+                <div class="tl-org">HIMTI BINUS University · June 22, 2024</div>
+                <div class="tl-desc" data-i18n="cert6_desc">Certificate awarded for serving as Committee during the HISHOT 2024 Seminar "Introducing Secure Cyber Futures: Exploring the New Era of Enhanced Intelligence", held by HIMTI BINUS University.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_cybersec">Cybersecurity</span>
+                  <span class="tl-tag" data-i18n="tag_committee">Committee</span>
+                </div>
+                <div class="cert-preview-wrap">
+                  <img src="assets/cert-hishot-committee.jpg" alt="HISHOT 2024 committee certificate" class="cert-preview" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-lblue"></div>
+              <div class="tl-date">Feb 2024 – Feb 2025</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-lblue">🎓 HIMTI BINUS</div>
+                <div class="tl-title" data-i18n="cert7_title">Activist of HIMTI Care 2024/2025</div>
+                <div class="tl-org">HIMTI BINUS University</div>
+                <div class="tl-desc" data-i18n="cert7_desc">Certificate of Appreciation presented for active contribution as an Activist of HIMTI Care during the 2024/2025 period, signed by the Chairman of HIMTI 2024 and the Dean of School of Computer Science.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_community2">Community</span>
+                  <span class="tl-tag" data-i18n="tag_social">Social Impact</span>
+                </div>
+                <div class="cert-preview-wrap">
+                  <img src="assets/cert-himticare.jpg" alt="HIMTI Care certificate" class="cert-preview" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot tl-dot-dkblue"></div>
+              <div class="tl-date">Oct 2022</div>
+              <div class="tl-card">
+                <div class="tl-badge tl-badge-dkblue">🏫 SKKK Indonesia</div>
+                <div class="tl-title" data-i18n="cert8_title">Committee — HIRAETH 2022 Band Competition</div>
+                <div class="tl-org">Sekolah Kristen Kalam Kudus Indonesia · Oct 28–29, 2022</div>
+                <div class="tl-desc" data-i18n="cert8_desc">Certificate of Appreciation for active and invaluable participation during the HIRAETH event as a committee member, presented by the Principal and Student Council Supervisor of SMAK Kalam Kudus Jakarta.</div>
+                <div class="tl-tags">
+                  <span class="tl-tag" data-i18n="tag_evcommittee">Event Committee</span>
+                  <span class="tl-tag" data-i18n="tag_music3">Music</span>
+                  <span class="tl-tag" data-i18n="tag_coordination2">Coordination</span>
+                </div>
+                <div class="cert-preview-wrap">
+                  <img src="assets/cert-hiraeth.jpg" alt="HIRAETH 2022 certificate" class="cert-preview" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- COURSEWORK -->
+<section id="coursework">
+  <div class="section-label">
+    <div class="section-label-line"></div>
+    <span class="section-label-text" data-i18n="sec_cw_label">03 / Coursework</span>
+  </div>
+  <h2 class="section-title" data-i18n="sec_cw_title">What I've studied</h2>
+
+  <div class="cw-toggle-wrap">
+    <button class="cw-toggle active" onclick="switchView('semester')" data-i18n="cw_btn_sem">By Semester</button>
+    <button class="cw-toggle" onclick="switchView('topic')" data-i18n="cw_btn_topic">By Topic</button>
+  </div>
+
+  <!-- SEMESTER VIEW -->
+  <div id="view-semester" class="cw-view">
+    <div class="sem-grid">
+
+      <div class="sem-card">
+        <div class="sem-header"><span class="sem-num">01</span><span class="sem-label"><span data-i18n="sem_word">Semester</span> 1</span></div>
+        <ul class="sem-courses">
+          <li data-i18n="c_algprog">Algorithm and Programming</li>
+          <li data-i18n="c_basicstat">Basic Statistics</li>
+          <li data-i18n="c_cb_pancasila">Character Building: Pancasila</li>
+          <li data-i18n="c_discmath">Discrete Mathematics</li>
+          <li data-i18n="c_indonesian">Indonesian</li>
+          <li data-i18n="c_linalg">Linear Algebra</li>
+          <li data-i18n="c_progdesign">Program Design Methods</li>
+        </ul>
+      </div>
+
+      <div class="sem-card">
+        <div class="sem-header"><span class="sem-num">02</span><span class="sem-label"><span data-i18n="sem_word2">Semester</span> 2</span></div>
+        <ul class="sem-courses">
+          <li data-i18n="c_calculus">Calculus</li>
+          <li data-i18n="c_cb_kwn">Character Building: Kewarganegaraan</li>
+          <li data-i18n="c_datastruct">Data Structures</li>
+          <li>EESE 2</li>
+          <li data-i18n="c_ent_ideation">Entrepreneurship: Ideation</li>
+          <li data-i18n="c_hci">Human and Computer Interaction</li>
+          <li data-i18n="c_scicomp">Scientific Computing</li>
+        </ul>
+      </div>
+
+      <div class="sem-card">
+        <div class="sem-header"><span class="sem-num">03</span><span class="sem-label"><span data-i18n="sem_word3">Semester</span> 3</span></div>
+        <ul class="sem-courses">
+          <li data-i18n="c_ada">Algorithm Design and Analysis</li>
+          <li data-i18n="c_ai">Artificial Intelligence</li>
+          <li data-i18n="c_cb_agama">Character Building: Agama</li>
+          <li data-i18n="c_compphys">Computational Physics</li>
+          <li data-i18n="c_comnet">Computer Networks</li>
+          <li data-i18n="c_dbtech">Database Technology</li>
+        </ul>
+      </div>
+
+      <div class="sem-card">
+        <div class="sem-header"><span class="sem-num">04</span><span class="sem-label"><span data-i18n="sem_word4">Semester</span> 4</span></div>
+        <ul class="sem-courses">
+          <li data-i18n="c_compbio">Computational Biology</li>
+          <li data-i18n="c_cloud">Introduction to Cloud Infrastructure</li>
+          <li data-i18n="c_ml">Machine Learning</li>
+          <li data-i18n="c_multimedia">Multimedia Systems</li>
+          <li data-i18n="c_oop">Object Oriented Programming</li>
+          <li data-i18n="c_rmcs">Research Methodology in Computer Science</li>
+          <li data-i18n="c_se">Software Engineering</li>
+        </ul>
+      </div>
+
+      <div class="sem-card">
+        <div class="sem-header"><span class="sem-num">05</span><span class="sem-label"><span data-i18n="sem_word5">Semester</span> 5</span></div>
+        <ul class="sem-courses">
+          <li data-i18n="c_compil">Compilation Techniques</li>
+          <li data-i18n="c_cv">Computer Vision</li>
+          <li data-i18n="c_dm">Data Mining</li>
+          <li data-i18n="c_ent_market">Entrepreneurship: Market Validation</li>
+          <li data-i18n="c_nlp">Natural Language Processing</li>
+          <li data-i18n="c_os">Operating System</li>
+          <li data-i18n="c_webprog">Web Programming</li>
+        </ul>
+      </div>
+
+      <div class="sem-card sem-card-abroad">
+        <div class="sem-header"><span class="sem-num">06</span><span class="sem-label"><span data-i18n="sem_word6">Semester</span> 6 · <span data-i18n="sem_abroad">Study Abroad</span></span><span class="abroad-badge">🌏 Mahidol, Thailand</span></div>
+        <ul class="sem-courses">
+          <li data-i18n="c_paradigms">Programming Paradigms</li>
+          <li data-i18n="c_minds">Minds and Machines</li>
+          <li data-i18n="c_nlsp">Natural Language and Speech Processing</li>
+          <li data-i18n="c_compess">Computer Essentials</li>
+          <li data-i18n="c_statres">Statistics for Research in Computer Engineering</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TOPIC VIEW -->
+  <div id="view-topic" class="cw-view cw-view-hidden">
+    <div class="topic-grid">
+
+      <div class="topic-card">
+        <div class="topic-icon topic-icon-purple">🤖</div>
+        <div class="topic-name" data-i18n="tp_ai">AI &amp; Machine Learning</div>
+        <ul class="topic-courses">
+          <li data-i18n="c_ai_2">Artificial Intelligence</li>
+          <li data-i18n="c_ml_2">Machine Learning</li>
+          <li data-i18n="c_cv_2">Computer Vision</li>
+          <li data-i18n="c_nlp_2">Natural Language Processing</li>
+          <li data-i18n="c_nlsp_2">Natural Language and Speech Processing</li>
+          <li data-i18n="c_dm_2">Data Mining</li>
+          <li data-i18n="c_minds_2">Minds and Machines</li>
+        </ul>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-icon topic-icon-pink">📐</div>
+        <div class="topic-name" data-i18n="tp_math">Mathematics &amp; Statistics</div>
+        <ul class="topic-courses">
+          <li data-i18n="c_calculus_2">Calculus</li>
+          <li data-i18n="c_linalg_2">Linear Algebra</li>
+          <li data-i18n="c_discmath_2">Discrete Mathematics</li>
+          <li data-i18n="c_basicstat_2">Basic Statistics</li>
+          <li data-i18n="c_scicomp_2">Scientific Computing</li>
+          <li data-i18n="c_compphys_2">Computational Physics</li>
+          <li data-i18n="c_compbio_2">Computational Biology</li>
+          <li data-i18n="c_statres_2">Statistics for Research in Computer Engineering</li>
+        </ul>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-icon topic-icon-teal">💻</div>
+        <div class="topic-name" data-i18n="tp_se">Software Engineering</div>
+        <ul class="topic-courses">
+          <li data-i18n="c_algprog_2">Algorithm and Programming</li>
+          <li data-i18n="c_progdesign_2">Program Design Methods</li>
+          <li data-i18n="c_ada_2">Algorithm Design and Analysis</li>
+          <li data-i18n="c_datastruct_2">Data Structures</li>
+          <li data-i18n="c_oop_2">Object Oriented Programming</li>
+          <li data-i18n="c_se_2">Software Engineering</li>
+          <li data-i18n="c_compil_2">Compilation Techniques</li>
+          <li data-i18n="c_paradigms_2">Programming Paradigms</li>
+          <li data-i18n="c_webprog_2">Web Programming</li>
+        </ul>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-icon topic-icon-amber">🗄️</div>
+        <div class="topic-name" data-i18n="tp_data">Data &amp; Systems</div>
+        <ul class="topic-courses">
+          <li data-i18n="c_dbtech_2">Database Technology</li>
+          <li data-i18n="c_cloud_2">Introduction to Cloud Infrastructure</li>
+          <li data-i18n="c_comnet_2">Computer Networks</li>
+          <li data-i18n="c_os_2">Operating System</li>
+          <li data-i18n="c_compess_2">Computer Essentials</li>
+          <li data-i18n="c_multimedia_2">Multimedia Systems</li>
+        </ul>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-icon topic-icon-purple-soft">🔬</div>
+        <div class="topic-name" data-i18n="tp_research">Research &amp; Design</div>
+        <ul class="topic-courses">
+          <li data-i18n="c_rmcs_2">Research Methodology in Computer Science</li>
+          <li data-i18n="c_hci_2">Human and Computer Interaction</li>
+          <li data-i18n="c_ent_ideation_2">Entrepreneurship: Ideation</li>
+          <li data-i18n="c_ent_market_2">Entrepreneurship: Market Validation</li>
+        </ul>
+      </div>
+
+      <div class="topic-card">
+        <div class="topic-icon topic-icon-pink-soft">🌐</div>
+        <div class="topic-name" data-i18n="tp_general">General &amp; Character</div>
+        <ul class="topic-courses">
+          <li data-i18n="c_cb_pancasila_2">Character Building: Pancasila</li>
+          <li data-i18n="c_cb_kwn_2">Character Building: Kewarganegaraan</li>
+          <li data-i18n="c_cb_agama_2">Character Building: Agama</li>
+          <li data-i18n="c_indonesian_2">Indonesian</li>
+          <li>EESE 2</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label">
+    <div class="section-label-line"></div>
+    <span class="section-label-text" data-i18n="sec_proj_label">04 / Projects</span>
+  </div>
+  <h2 class="section-title" data-i18n="sec_proj_title">Things I've built</h2>
+
+  <!-- Filter -->
+  <div class="proj-filter-wrap">
+    <button class="proj-filter active" onclick="filterProjects('all', this)" data-i18n="pf_all">All</button>
+    <button class="proj-filter" onclick="filterProjects('ai', this)" data-i18n="pf_ai">AI / ML</button>
+    <button class="proj-filter" onclick="filterProjects('web', this)" data-i18n="pf_web">Web &amp; Mobile</button>
+    <button class="proj-filter" onclick="filterProjects('data', this)" data-i18n="pf_data">Data &amp; Systems</button>
+  </div>
+
+  <div class="projects-grid" id="projectsGrid">
+
+    <!-- 1. P-Minum -->
+    <article class="project-card project-featured" data-cat="ai web">
+      <div class="project-card-top">
+        <div class="project-icon icon-teal">💧</div>
+        <div class="project-links">
+          <a href="https://github.com/stevenj2995" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="project-flag" data-i18n="proj_featured">★ Featured</div>
+      <h3 class="project-title">P-Minum — Smart Hydration Tracker</h3>
+      <p class="project-desc" data-i18n="proj_pminum_desc">A cross-platform Android app that recommends personalised daily water intake. A machine learning model classifies user activity level and is served through a Flask REST API deployed on Render, with a Flutter front-end handling logging, reminders, and progress tracking.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Flutter</span>
+        <span class="stack-tag">Dart</span>
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">Flask</span>
+        <span class="stack-tag">REST API</span>
+        <span class="stack-tag">Render</span>
+      </div>
+    </article>
+
+    <!-- 2. Water Quality AI -->
+    <article class="project-card" data-cat="ai data">
+      <div class="project-card-top">
+        <div class="project-icon icon-teal">🌊</div>
+        <div class="project-links">
+          <a href="https://github.com/stevenj2995/AI-Based-Water-Quality-Monitoring" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <h3 class="project-title">AI-Based Water Quality Monitoring</h3>
+      <p class="project-desc" data-i18n="proj_water_desc">A machine learning system that classifies water pollution levels and flags anomalies to support sustainable water management. The Random Forest model reached an F1-score of 99.51%, precision of 99.13%, and recall of 99.89%, deployed through an interactive Streamlit dashboard.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">Random Forest</span>
+        <span class="stack-tag">Scikit-learn</span>
+        <span class="stack-tag">Streamlit</span>
+      </div>
+    </article>
+
+    <!-- 3. Depression Detection -->
+    <article class="project-card" data-cat="ai">
+      <div class="project-card-top">
+        <div class="project-icon icon-purple">🧠</div>
+        <div class="project-links">
+          <a href="https://github.com/stevenj2995/research-methodology-steven-joe" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <h3 class="project-title">Depression Detection on Reddit (DeBERTaV3)</h3>
+      <p class="project-desc" data-i18n="proj_depr_desc">An NLP model fine-tuned on roughly 7,700 Reddit posts to detect linguistic signs of depression, achieving 98.7% accuracy and a 98.69% F1-score. The research was published through BINUS Research Methodology in Computer Science.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">DeBERTaV3</span>
+        <span class="stack-tag">Transformers</span>
+        <span class="stack-tag">NLP</span>
+      </div>
+    </article>
+
+    <!-- 4. Skill Matcher -->
+    <article class="project-card" data-cat="ai">
+      <div class="project-card-top">
+        <div class="project-icon icon-pink">🎯</div>
+        <div class="project-links">
+          <a href="https://github.com/stevenj2995/nlp-project" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <h3 class="project-title">Job-to-Candidate Skill Matcher</h3>
+      <p class="project-desc" data-i18n="proj_match_desc">A semantic matching engine using SBERT (all-MiniLM-L6-v2) to pair candidate resumes with job descriptions via cosine similarity. Processed 2,483 resume PDFs against more than 30,000 job postings, reaching 99.16% Top-3 accuracy for Business Development roles.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">SBERT</span>
+        <span class="stack-tag">Cosine Similarity</span>
+        <span class="stack-tag">PyMuPDF</span>
+        <span class="stack-tag">Streamlit</span>
+      </div>
+    </article>
+
+    <!-- 5. Crop Recommendation -->
+    <article class="project-card" data-cat="ai data">
+      <div class="project-card-top">
+        <div class="project-icon icon-teal">🌾</div>
+        <div class="project-links">
+          <a href="https://github.com/stevenj2995/data-mining-project" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <h3 class="project-title">Data-Driven Crop Recommendation</h3>
+      <p class="project-desc" data-i18n="proj_crop_desc">A recommendation system that suggests optimal crops from soil and climate data, achieving 93% accuracy and a 97% F1-score. SHAP analysis identified nitrogen as the most influential factor, and a business simulation projected 97.88% of ideal profit.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">Random Forest</span>
+        <span class="stack-tag">XGBoost</span>
+        <span class="stack-tag">SHAP</span>
+        <span class="stack-tag">SMOTE</span>
+      </div>
+    </article>
+
+    <!-- 6. Posture Alert -->
+    <article class="project-card" data-cat="ai">
+      <div class="project-card-top">
+        <div class="project-icon icon-purple">🧍</div>
+        <div class="project-links">
+          <a href="https://github.com/stevenj2995/posture-detection-computer-vision" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <h3 class="project-title">Posture Alert</h3>
+      <p class="project-desc" data-i18n="proj_posture_desc">A real-time posture monitoring app that uses MediaPipe pose estimation to detect slouching and alert users. Features a custom Calibration Lock algorithm so the system adapts to each user's neutral sitting position.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">MediaPipe</span>
+        <span class="stack-tag">OpenCV</span>
+        <span class="stack-tag">Streamlit</span>
+      </div>
+    </article>
+
+    <!-- 7. Visit Indonesia -->
+    <article class="project-card" data-cat="web">
+      <div class="project-card-top">
+        <div class="project-icon icon-pink">🌐</div>
+        <div class="project-links">
+          <a href="https://github.com/stevenj2995/web-programming-project" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <h3 class="project-title">Visit Indonesia — Bilingual Travel Platform</h3>
+      <p class="project-desc" data-i18n="proj_visit_desc">A full-stack bilingual (EN/ID) travel article platform built with Laravel. Includes full CRUD, user authentication, image uploads, and pagination — a complete content-management experience for showcasing Indonesian destinations.</p>
+      <div class="project-stack">
+        <span class="stack-tag">PHP</span>
+        <span class="stack-tag">Laravel</span>
+        <span class="stack-tag">Blade</span>
+        <span class="stack-tag">SQLite</span>
+        <span class="stack-tag">Bootstrap</span>
+      </div>
+    </article>
+
+    <!-- 8. Portfolio Website -->
+    <article class="project-card" data-cat="web">
+      <div class="project-card-top">
+        <div class="project-icon icon-purple">✨</div>
+        <div class="project-links">
+          <a href="https://github.com/stevenj2995" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <h3 class="project-title" data-i18n="proj_portfolio_title">Personal Portfolio Website</h3>
+      <p class="project-desc" data-i18n="proj_portfolio_desc">This site — hand-coded from scratch with no framework or template. Features a full EN/ID bilingual system, responsive layout, tabbed timelines, project filtering, and a dark theme built entirely on custom CSS variables.</p>
+      <div class="project-stack">
+        <span class="stack-tag">HTML</span>
+        <span class="stack-tag">CSS</span>
+        <span class="stack-tag">JavaScript</span>
+        <span class="stack-tag">i18n</span>
+        <span class="stack-tag">Vercel</span>
+      </div>
+    </article>
+
+    <!-- 9. Campus Network -->
+    <article class="project-card" data-cat="data">
+      <div class="project-card-top">
+        <div class="project-icon icon-amber">🖧</div>
+        <div class="project-links">
+          <a href="https://github.com/stevenj2995/binus-campus-network-design" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <h3 class="project-title" data-i18n="proj_network_title">Campus Enterprise Network Design</h3>
+      <p class="project-desc" data-i18n="proj_network_desc">A complete enterprise network topology for a university campus, designed and simulated in Cisco Packet Tracer. Covers VLAN segmentation, inter-VLAN routing, DHCP configuration, and subnet planning across multiple buildings.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Cisco Packet Tracer</span>
+        <span class="stack-tag">VLAN</span>
+        <span class="stack-tag">Routing</span>
+        <span class="stack-tag">Subnetting</span>
+      </div>
+    </article>
+
+    <!-- 10. Warehouse Capacity -->
+    <article class="project-card" data-cat="data">
+      <div class="project-card-top">
+        <div class="project-icon icon-teal">📦</div>
+        <div class="project-links">
+          <a href="https://github.com/stevenj2995/Warehouse-Capacity-Analysis" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <h3 class="project-title">Warehouse Capacity Analysis</h3>
+      <p class="project-desc" data-i18n="proj_warehouse_desc">A predictive analysis using polynomial regression and Taylor Series approximation to forecast when a warehouse would reach its 25,000-unit capacity, giving roughly a 13-month lead time for planning and expansion decisions.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">Polynomial Regression</span>
+        <span class="stack-tag">Taylor Series</span>
+        <span class="stack-tag">NumPy</span>
+      </div>
+    </article>
+
+    <!-- 11. Library Database -->
+    <article class="project-card" data-cat="data">
+      <div class="project-card-top">
+        <div class="project-icon icon-purple">📚</div>
+        <div class="project-links">
+          <a href="https://github.com/stevenj2995/Library-Management-System-Database" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <h3 class="project-title">Library Management System Database</h3>
+      <p class="project-desc" data-i18n="proj_library_desc">A full-scale relational database for a library management system, covering schema design, entity relationships, and normalisation — built to handle members, book inventory, borrowing records, and transactions.</p>
+      <div class="project-stack">
+        <span class="stack-tag">MySQL</span>
+        <span class="stack-tag">Database Design</span>
+        <span class="stack-tag">ERD</span>
+      </div>
+    </article>
+
+    <!-- 12. Invadio -->
+    <article class="project-card" data-cat="web">
+      <div class="project-card-top">
+        <div class="project-icon icon-purple">👾</div>
+        <div class="project-links">
+          <a href="https://github.com/stevenj2995/InvadioGroup2" target="_blank" rel="noopener noreferrer" class="project-link">GitHub ↗</a>
+        </div>
+      </div>
+      <h3 class="project-title">Invadio — Arcade Space-Shooter Game</h3>
+      <p class="project-desc" data-i18n="proj_invadio_desc">A Space Invaders-style arcade game built with Pygame using object-oriented design. Features three progressive levels ending in a multi-phase MechaBot boss with randomised attack patterns, animated sprite explosions, health bars, sound effects, and multiple game states.</p>
+      <div class="project-stack">
+        <span class="stack-tag">Python</span>
+        <span class="stack-tag">Pygame</span>
+        <span class="stack-tag">OOP</span>
+        <span class="stack-tag">Game Dev</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-wrap">
+    <div class="section-label section-label-center">
+      <div class="section-label-line"></div>
+      <span class="section-label-text" data-i18n="sec_contact_label">05 / Contact</span>
+      <div class="section-label-line"></div>
+    </div>
+    <h2 class="contact-title">
+      <span data-i18n="contact_title_1">Let's work</span><br/>
+      <span class="gradient-text" data-i18n="contact_title_2">together.</span>
+    </h2>
+    <p class="contact-sub" data-i18n="contact_sub">I'm actively seeking internship opportunities in AI, data science, and software engineering. If you think I'd be a good fit — or just want to talk tech — reach out anytime.</p>
+    <div class="contact-links">
+      <a href="mailto:stevenj2995@gmail.com" class="contact-link">📧 stevenj2995@gmail.com</a>
+      <a href="mailto:steven.jonatan@binus.ac.id" class="contact-link">🎓 steven.jonatan@binus.ac.id</a>
+      <a href="https://www.linkedin.com/in/stevenjonatan/" target="_blank" rel="noopener noreferrer" class="contact-link">💼 LinkedIn</a>
+      <a href="https://github.com/stevenj2995" target="_blank" rel="noopener noreferrer" class="contact-link">🐙 GitHub</a>
+    </div>
+    <p class="contact-loc" data-i18n="contact_loc">📍 Based in West Jakarta, Indonesia · Open to relocation</p>
+  </div>
+</section>
+
+<footer>
+  <span data-i18n="footer_text">Built by </span><span>Steven Jonatan</span> · stevenj2995@gmail.com · © <span id="year">2026</span>
+</footer>
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
